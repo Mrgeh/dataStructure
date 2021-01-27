@@ -3,7 +3,7 @@ package com.gehang.datastructure.LinkedList;
 
 import org.w3c.dom.Node;
 
-import java.util.zip.ZipInputStream;
+import java.util.LinkedList;
 
 /**
  * @author Ge Hang
@@ -96,5 +96,15 @@ public class List {
         }*/
         size--;
         return removedNode;
+    }
+
+
+    public static void main(String[] args) {
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.add(3,0);
+        linkedList.add(3,0);
+        linkedList.add(3,0);
+        linkedList.remove(0);
+
     }
 }
