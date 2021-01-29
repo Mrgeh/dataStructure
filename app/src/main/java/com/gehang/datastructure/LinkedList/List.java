@@ -73,7 +73,7 @@ public class List {
 
         Node removedNode = null;
 
-/*        if (index ==0){
+       if (index ==0){
             //删除头节点
             removedNode = head;
             head = head.next;
@@ -93,7 +93,7 @@ public class List {
             Node nextNode = prevNode.next.next;
             removedNode=prevNode.next;
             prevNode.next  =nextNode;
-        }*/
+        }
         size--;
         return removedNode;
     }
