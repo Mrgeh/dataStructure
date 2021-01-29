@@ -73,27 +73,27 @@ public class List {
 
         Node removedNode = null;
 
-       if (index ==0){
-            //删除头节点
-            removedNode = head;
-            head = head.next;
-        }
-        else if (index==size-1){
-            //删除尾节点
-            Node prevNode = get(index-1);
-            removedNode = prevNode.next;
-            prevNode.next=null;
-            last = prevNode;
-
-        }
-        else {
-            //删除中间节点
-
-            Node  prevNode = get(index-1);
-            Node nextNode = prevNode.next.next;
-            removedNode=prevNode.next;
-            prevNode.next  =nextNode;
-        }
+//       if (index ==0){
+//            //删除头节点
+//            removedNode = head;
+//            head = head.next;
+//        }
+//        else if (index==size-1){
+//            //删除尾节点
+//            Node prevNode = get(index-1);
+//            removedNode = prevNode.next;
+//            prevNode.next=null;
+//            last = prevNode;
+//
+//        }
+//        else {
+//            //删除中间节点
+//
+//            Node  prevNode = get(index-1);
+//            Node nextNode = prevNode.next.next;
+//            removedNode=prevNode.next;
+//            prevNode.next  =nextNode;
+//        }
         size--;
         return removedNode;
     }
